@@ -1,0 +1,137 @@
+*{
+    margin: 0px;
+    padding: 0px;
+  }
+  body{
+    background-color:beige;
+    background-image: url(BIDashboard2.png);
+  }
+  .container{
+    width: auto;
+  }
+  nav{
+    display: flex;
+    list-style: none;
+    background-color: rgb(36, 35, 35);
+    color: white;
+    border-radius: 6px;
+  }
+  nav li a{
+    display: block;
+    padding: 25px 25px;
+    font-size: 20px;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 10px 10px;
+  }
+  nav li a:hover{
+    background-color: white;
+    color: black;
+  }
+  input[type="range"] {
+    -webkit-appearance: slider-vertical;
+    height: 200px;
+  }
+  .completeSlider1{
+    padding-top: 40px;
+    display: flex;
+  }
+  .completeSlider2{
+    padding-top: 40px;
+    display: flex;
+  }
+  .completeSlider3{
+    padding-top: 40px;
+    display: flex;
+  }
+  .completeSlider4{
+    padding-top: 40px;
+    display: flex;
+  }
+  .allInputs{
+    display: flex;
+    justify-content: space-between;
+  }
+  .Tensile_Equation_Coefficients{
+    display: flex;
+    justify-content: space-between;
+  }
+  .carouselExternalCSS{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 500px;
+  }
+  .GridContainer1{
+    display: grid;
+    grid-template-columns: 1fr 1.25fr;
+    column-gap: 20px;
+  }
+  .subGridContainer1{
+    background-color:black;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px #7e7474;
+  }
+  .subGridContainer2{
+    background-color:chartreuse;
+    color:rgb(8, 19, 13);
+    font-weight:bold;
+    border-radius: 20px;
+    background-image: url(SlidersBI.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .subGridContainer2of2{
+    background-color:mediumspringgreen;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: 10fr 1fr;
+    place-items: center;
+  }
+  .subGridContainer1of2of2{
+    padding-top: 15px;
+  }
+  .setButton{
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color:rgb(10, 99, 99);
+    color: wheat;
+    border-radius: 4px;
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+  }
+  #calculateCostButton{
+    background-color: cadetblue;
+    color: black;
+    border-radius: 6px;
+    padding: 4px;
+  }
+  #costTable th{
+    background-color:black;
+    color: white;
+  }
+  #costTable tr{
+    font-weight: bold;
+  }
+  #costTable tr:nth-child(even){background-color: #ffffff;}
+  #costTable tr:hover {background-color: #ddd;}
+  ::placeholder {
+    font-weight: normal;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .col{
+    background-image: url(DashGuageBI.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    column-gap: 20px;
+  }
+  .row{
+    flex-grow: 1;
+  }
