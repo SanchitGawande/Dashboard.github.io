@@ -186,8 +186,8 @@ function myFunctionForE1() {
 
 // Cost Estimation
 function calculateCost() {
-  var DBM_cost = document.getElementById("DBM formula").innerHTML = 431250 * H1;
-  var CTB_cost = document.getElementById("CTB formula").innerHTML = 52088.4 * H3;
-  var Total_cost = 27187500 + DBM_cost + 5670000 + CTB_cost + 9168000;
+  var DBM_cost = document.getElementById("DBM formula").innerHTML = 431250*H1;
+  var CTB_cost = document.getElementById("CTB formula").innerHTML = 52088.4*H3;
+  var Total_cost = 26250000 + DBM_cost + 5670000 + CTB_cost + 9168000;
   document.getElementById("costSummation").innerHTML = "Total Cost per km for 8 Lanes is <strong>" + Total_cost + " ₹";
 }
