@@ -23,8 +23,8 @@ function evaluate() {
   }
   else {
     var Tensile_Strain = document.getElementById("Coefficient 1").value - document.getElementById("Coefficient 2").value * CBR - document.getElementById("Coefficient 3").value * H3 - document.getElementById("Coefficient 5").value * H1 - document.getElementById("Coefficient 6").value * E1;
-    automateSpeedGauge(Tensile_Strain);
-    outputText = "The value of Tensile strain for given value of <b>CBR, H1, H3, E1</b> and <b>E2</b> is: <strong>" + Tensile_Strain + " Microstrain";
+    automateSpeedGauge(Math.round(Tensile_Strain));
+    outputText = "The value of Tensile strain for given value of <b>CBR, H1, H3, E1</b> and <b>E2</b> is: <strong>" + Math.round(Tensile_Strain) + " Microstrain";
   }
 
   document.getElementById("output_text").innerHTML = outputText;
