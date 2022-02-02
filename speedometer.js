@@ -23,13 +23,13 @@ function evaluate() {
   }
   else {
     var Tensile_Strain = document.getElementById("Coefficient 1").value - document.getElementById("Coefficient 2").value * CBR - document.getElementById("Coefficient 3").value * H2 - document.getElementById("Coefficient 5").value * H1 - document.getElementById("Coefficient 6").value * E1;
-    automateSpeedGauge(Tensile_Strain);
-    outputText = "The value of Tensile strain for given value of <b>CBR, H1, H2, E1</b> and <b>E2</b> is: <strong>" + Tensile_Strain + " Microstrain";
+    automateSpeedGauge(Math.round(Tensile_Strain));
+    outputText = "The value of Tensile strain for given value of <b>CBR, H1, H2, E1</b> and <b>E2</b> is: <strong>" + Math.round(Tensile_Strain) + " Microstrain";
 
 
     var Compressive_Strain = document.getElementById("Coefficient 1C").value - document.getElementById("Coefficient 2C").value * CBR - document.getElementById("Coefficient 3C").value * H2 - document.getElementById("Coefficient 5C").value * H1 - document.getElementById("Coefficient 6C").value * E1;
-    automateSpeedGaugeC(Compressive_Strain);
-    outputTextC = "The value of Compressive Strain for given value of <b>CBR, H1, H2, E1</b> and <b>E2</b> is: <strong>" + Compressive_Strain + " Microstrain";
+    automateSpeedGaugeC(Math.round(Compressive_Strain));
+    outputTextC = "The value of Compressive Strain for given value of <b>CBR, H1, H2, E1</b> and <b>E2</b> is: <strong>" + Math.round(Compressive_Strain) + " Microstrain";
   }
 
   document.getElementById("output_text").innerHTML = outputText;
