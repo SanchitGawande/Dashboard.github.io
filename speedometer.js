@@ -202,7 +202,7 @@ function myFunctionForE1() {
 // Cost Estimation
 function calculateCost() {
   var DBM_cost = document.getElementById("DBM formula").innerHTML = 431250*H1;
-  var GSB_cost = document.getElementById("GSB formula").innerHTML = 45840*H2;
-  var Total_cost = 27187500 + DBM_cost + 8505000 + GSB_cost;
+  var GSB_cost = document.getElementById("GSB formula").innerHTML = 45840*(H2-150);
+  var Total_cost = 26250000 + DBM_cost + 8505000 + GSB_cost;
   document.getElementById("costSummation").innerHTML = "Total Cost per km for 8 Lanes is <strong>" + Total_cost +" ₹";
 }
